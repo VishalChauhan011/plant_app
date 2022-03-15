@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:plant_app/Components/title_with_custom_underline.dart';
+import 'package:plant_app/Components/custom_title/title_with_custom_underline.dart';
 
-import 'constants.dart';
+import '../constants.dart';
 
 class TitleWithMoreBtn extends StatelessWidget {
   const TitleWithMoreBtn({
