@@ -3,6 +3,8 @@ import 'package:flutter_svg/svg.dart';
 import 'package:plant_app/Components/body.dart';
 import 'package:plant_app/Components/constants.dart';
 
+import '../Components/bottom_nav_bar.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -11,9 +13,12 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: buildAppBar(),
       body: const Body(),
+      bottomNavigationBar: const MyBottomNavBar(),
     );
   }
 }
+
+
 
 AppBar buildAppBar() {
   return AppBar(
