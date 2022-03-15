@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-
 import 'package:plant_app/Components/Recommended/recommend_list.dart';
+import 'package:plant_app/Components/constants.dart';
 import 'package:plant_app/Components/title_with_more_button.dart';
+import 'Featured/featured_plant_card.dart';
+import 'Featured/featured_plant_list.dart';
 import 'header_with_search_box.dart';
 
 class Body extends StatelessWidget {
@@ -16,8 +18,13 @@ class Body extends StatelessWidget {
           HeaderWithSearchBox(size: size),
           TitleWithMoreBtn(title: 'Recommended', onPress: () {}),
           const RecommendList(),
+          TitleWithMoreBtn(title: 'Featured', onPress: () {}),
+          const FeaturedPlantList(),
+          const SizedBox(height: kDefaultPadding,),
         ],
       ),
     );
   }
 }
+
+
